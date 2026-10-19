@@ -1,4 +1,4 @@
-# Week 2 – Exploratory Data Analysis and Visualization
+# Exploratory Data Analysis and Visualization
 
 ## 📌 Project Overview
 
@@ -109,7 +109,6 @@ The project includes:
 Week-2-EDA-Visualization/
 │
 ├── netflix_titles.csv
-├── netflix_titles_cleaned.csv
 ├── Week_2_EDA_Visualization.py
 └── README.md
 ```
@@ -117,8 +116,6 @@ Week-2-EDA-Visualization/
 ### File Description
 
 **`netflix_titles.csv`** – Original dataset.
-
-**`netflix_titles_cleaned.csv`** – Cleaned and transformed dataset.
 
 **`Week_2_EDA_Visualization.py`** – Complete Python code for EDA and visualization.
 
