@@ -1,140 +1,87 @@
-# Exploratory Data Analysis and Visualization
+# Retail Sales Exploratory Data Analysis & Visualization
 
-## 📌 Project Overview
+## Project Overview
 
-This project focuses on **Exploratory Data Analysis (EDA) and Data Visualization** using the **Netflix Movies and TV Shows dataset**.
+This project explores a retail sales dataset using Python to understand sales performance, customer demographics, product category revenue, and sales trends over time. Exploratory Data Analysis (EDA) and data visualization are used to summarize the dataset and identify useful business insights.
 
-The analysis was performed using Python to explore the dataset, identify patterns and trends, study relationships between variables, and present findings through visualizations.
+## Objectives
 
----
+- Explore the structure and characteristics of retail sales data.
+- Check for missing values and examine descriptive statistics.
+- Analyze sales by product category and customer gender.
+- Identify monthly and quarterly sales trends.
+- Summarize findings that may support business decision-making.
 
-## 🎯 Objectives
+## Dataset
 
-* Understand the structure of the dataset.
-* Identify and handle missing values and duplicate records.
-* Perform descriptive statistical analysis.
-* Explore patterns and trends in the data.
-* Analyze relationships between variables.
-* Create meaningful visualizations.
-* Interpret the findings from the analysis.
+The dataset, `retail_sales_dataset.csv`, contains **1,000 records and 9 columns**.
 
----
+| Column | Description |
+|---|---|
+| Transaction ID | Unique transaction identifier |
+| Date | Transaction date |
+| Customer ID | Customer identifier |
+| Gender | Customer gender |
+| Age | Customer age |
+| Product Category | Category of the purchased product |
+| Quantity | Number of units purchased |
+| Price per Unit | Price per unit |
+| Total Amount | Total transaction amount |
 
-## 📂 Dataset
+## Tools and Libraries
 
-The **Netflix Movies and TV Shows** dataset contains information about movies and TV shows available on Netflix.
+- **Python** — analysis and calculations
+- **Pandas** — data loading, manipulation, grouping, and aggregation
+- **Matplotlib** — data visualization
+- **Seaborn** — visualization library imported in the notebook
 
-Important features include:
+## Methodology
 
-* `type`
-* `title`
-* `director`
-* `cast`
-* `country`
-* `date_added`
-* `release_year`
-* `rating`
-* `duration`
-* `listed_in`
-* `description`
+1. **Data loading and inspection:** Loaded the CSV file using Pandas and examined the first few records, dataset dimensions, column data types, and structure.
+2. **Data quality checks:** Checked for missing values across all columns.
+3. **Descriptive statistics:** Used summary statistics to examine numerical variables, including age, quantity, unit price, and total amount.
+4. **Date processing:** Converted the `Date` column to datetime format and extracted monthly and quarterly periods.
+5. **Sales analysis:** Grouped and aggregated sales data to compare product categories, customer gender, and sales performance over time.
+6. **Visualization:** Created charts to make sales patterns and comparisons easier to understand.
 
----
+## Visualizations
 
-## 🛠️ Tools & Libraries
+The notebook includes visual analysis of:
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Jupyter Notebook / VS Code
+- Monthly sales trends using a line chart.
+- Total sales by customer gender using a bar chart.
+- Sales performance across product categories.
+- Sales aggregated by month and quarter.
 
----
+## Key Findings
 
-## 🔍 Data Analysis Process
+- **Top revenue category:** Electronics generated the highest category revenue, totaling **156,905**.
+- **Lowest revenue category:** Beauty generated the lowest category revenue, totaling **143,515**.
+- **Sales by gender:** Female customers contributed the higher total sales, amounting to **232,840**.
+- **Average customer age:** Approximately **41.39 years**.
+- **Highest monthly sales:** May 2023, with **53,150** in sales.
+- **Highest quarterly sales:** Q4 2023, with **126,190** in sales.
+- **Data completeness:** No missing values were detected in the initial dataset inspection.
 
-The following steps were performed:
+*Note: Sales amounts are reported in the dataset's units; no currency symbol is assumed.*
 
-1. Loaded the dataset using Pandas.
-2. Inspected the dataset structure and basic statistics.
-3. Checked for missing values and duplicate records.
-4. Handled missing categorical values.
-5. Converted `date_added` into datetime format.
-6. Created `year_added` and `month_added` features.
-7. Performed descriptive and exploratory analysis.
-8. Analyzed countries and categories.
-9. Analyzed movie duration.
-10. Studied correlations between numerical variables.
-11. Created multiple visualizations to identify patterns and trends.
+## Skills Demonstrated
 
----
+- Exploratory Data Analysis (EDA)
+- Data inspection and quality checks
+- Descriptive statistics
+- Date and time processing
+- Grouping and aggregation with Pandas
+- Time-based sales analysis
+- Data visualization and interpretation
+- Communicating findings from data
 
-## 📊 Visualizations
+## Conclusion
 
-The project includes:
+This project demonstrates how Python can be used to explore retail transaction data, summarize customer and product information, and visualize sales patterns across different categories and time periods. The analysis highlights the strongest revenue-generating category, differences in sales by gender, and periods with higher sales activity.
 
-* Movies vs TV Shows distribution
-* Content type percentage
-* Release year distribution
-* Top 10 ratings
-* Titles added over the years
-* Top 10 countries
-* Top 10 categories
-* Movies and TV Shows by release year
-* Movies and TV Shows added each year
-* Top 10 directors
-* Movie duration distribution
-* Movie duration box plot
-* Correlation heatmap
-* Release year vs year added scatter plot
+## Repository Contents
 
----
-
-## 💡 Key Findings
-
-* Movies form a major portion of the Netflix dataset.
-* The dataset contains titles associated with many different countries.
-* Netflix titles cover a wide variety of categories and genres.
-* Some content ratings occur more frequently than others.
-* The number of titles added to Netflix varies across different years.
-* Movies and TV Shows show different patterns when analyzed over time.
-* Movie durations vary considerably.
-* Some titles are associated with multiple countries and categories.
-
----
-
-## 📁 Project Files
-
-```text
-Week-2-EDA-Visualization/
-│
-├── netflix_titles.csv
-├── Week_2_EDA_Visualization.py
-└── README.md
-```
-
-### File Description
-
-**`netflix_titles.csv`** – Original dataset.
-
-**`Week_2_EDA_Visualization.py`** – Complete Python code for EDA and visualization.
-
-**`README.md`** – Project documentation.
-
----
-
-## 🚀 Conclusion
-
-This project provided practical experience in **Exploratory Data Analysis and Data Visualization** using Python.
-
-The analysis demonstrated how data cleaning, transformation, statistical analysis, and visualization can be used to discover meaningful patterns and insights from a real-world dataset.
-
----
-
-### 👩‍💻 Internship Project
-
-**Week:** 2
-**Topic:** Exploratory Data Analysis and Visualization
-**Dataset:** Netflix Movies and TV Shows
-**Language:** Python
+- `data_analysis_week2.py` — Python code containing the analysis, code, outputs, and visualizations
+- `README.md` — project documentation
 
